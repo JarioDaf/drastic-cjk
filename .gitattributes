@@ -1,0 +1,18 @@
+# the generated blobs are binary -- never let anything rewrite their line endings
+*.bin   binary
+*.raw   binary
+
+# keep diffs honest for the text sources
+*.c     text eol=lf
+*.h     text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.sh    text eol=lf
+*.ld    text eol=lf
+*.hex   text eol=lf
+*.txt   text eol=lf
+Makefile text eol=lf
+
+# GitHub linguist: the repo is C + Python; stop it guessing on the blobs
+assets/*.bin       linguist-generated=true
+assets/unifont.hex linguist-generated=true

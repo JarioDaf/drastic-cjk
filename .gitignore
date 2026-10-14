@@ -1,0 +1,23 @@
+# ---- vendor binary: NEVER commit this ------------------------------------
+# You must supply your own unmodified copy (see NOTICE.md).
+drastic
+drastic.*
+!drastic.cjk.example
+
+# ---- build outputs ------------------------------------------------------
+build/
+*.o
+*.elf
+*.cjk
+
+# ---- python -------------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- editors / os -------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
